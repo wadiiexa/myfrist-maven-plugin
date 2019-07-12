@@ -15,7 +15,7 @@ import java.io.IOException;
  * Hello world!
  *
  */
- @Mojo(name = "hello1", defaultPhase = LifecyclePhase.VALIDATE)
+ @Mojo(name = "hello1", defaultPhase = LifecyclePhase.COMPILE)
 public class App1 extends AbstractMojo {
     @Parameter(property = "msg",defaultValue = "from maven 1")
     private String msg;

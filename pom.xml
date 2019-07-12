@@ -13,6 +13,12 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+      <scm>
+        <connection>scm:git:essidwadii@gmail.com:wadiiexa/myfirst-maven-plugin.git</connection>
+        <developerConnection>scm:git:essidwadii@gmail.com:wadiiexa/myfirst-maven-plugin.git</developerConnection>
+        <url>https://github.com/wadiiexa/myfirst-maven-plugin.git</url>
+        <tag>myfirst-maven-plugin-1.0</tag>
+     </scm>
 
   <dependencies>
     <dependency>
@@ -33,4 +39,14 @@
             <scope>provided</scope>
         </dependency>
   </dependencies>
+   <build>
+        <plugins>
+			 <!-- Préparation de release par le plugin maven release-->
+			<plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-release-plugin</artifactId>
+              <version>2.5.3</version>			
+			</plugin>
+        </plugins>
+    </build>
 </project>
