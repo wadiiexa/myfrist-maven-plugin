@@ -3,7 +3,7 @@
 
   <groupId>com.anupam</groupId>
   <artifactId>myfirst-maven-plugin</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <name>myfirst-maven-plugin</name>
