@@ -15,7 +15,7 @@
       <scm>
         <connection>scm:git:https://github.com/wadiiexa/myfirst-maven-plugin.git</connection>
         <url>https://github.com/wadiiexa/myfirst-maven-plugin.git</url>
-        <tag>${project.version}</tag>
+        <tag>myfirst-maven-plugin-1.0</tag>
      </scm>
 	 
   <dependencies>
