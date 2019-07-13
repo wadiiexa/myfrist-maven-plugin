@@ -86,9 +86,9 @@
               <version>2.2</version>
             </dependency>
           </dependencies>
-            <configuration>
-                <autoVersionSubmodules>true</autoVersionSubmodules>
-            </configuration>
+             <configuration>
+          <mavenExecutorId>forked-path</mavenExecutorId>
+        </configuration>
     
 
                 <!-- <configuration>
