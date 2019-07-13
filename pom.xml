@@ -3,7 +3,7 @@
 
   <groupId>com.anupam</groupId>
   <artifactId>myfirst-maven-plugin</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <name>myfirst-maven-plugin</name>
@@ -13,15 +13,44 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
     
-	 <scm>
+	  <scm>
        <connection>scm:git:git@github.com:wadiiexa/myfirst-maven-plugin.git</connection>
        <url>scm:git:git@github.com:wadiiexa/myfirst-maven-plugin.git</url>
        <developerConnection>scm:git:git@github.com:wadiiexa/myfirst-maven-plugin.git</developerConnection>
-       <tag>v1.0</tag>
-  </scm>
-	     <!-- <scm>
+     </scm>
+	    <!--<scm>
            <connection>scm:git:https://github.com/wadiiexa/myfirst-maven-plugin.git</connection>
 		  </scm>-->
+		  <distributionManagement>
+ <!-- Publish the versioned releases here -->
+ <repository>
+  <id>nexus_repo</id>
+  <name>Mon repo Nexus</name>
+  <url>http://localhost:8081/nexus/content/repositories/releases/</url>
+ </repository>
+
+ <!-- Publish the versioned releases here -->
+ <snapshotRepository>
+  <id>nexus_repo</id>
+  <name>Mon Repo Nexus</name>
+  <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+ </snapshotRepository>
+</distributionManagement>
+<!-- download artifacts from this repo -->
+<repositories>
+ <repository>
+  <id>nexus_repo</id>
+  <name>Mon Repo Nexus</name>
+  <url>http://localhost:8081/nexus/content/groups/public/</url>
+  <releases>
+   <enabled>true</enabled>
+  </releases>
+
+  <snapshots>
+   <enabled>true</enabled>
+  </snapshots>
+ </repository>
+</repositories>
 	 
   <dependencies>
     <dependency>
@@ -50,10 +79,10 @@
                     <artifactId>maven-release-plugin</artifactId>
                     <version>2.5.2</version>
 
-                 <configuration>
+                <!-- <configuration>
                   <tagNameFormat>v@{project.version}</tagNameFormat>
                   <autoVersionSubmodules>true</autoVersionSubmodules>
-                 </configuration>
+                 </configuration>-->
 </plugin>
         </plugins>
     </build>
