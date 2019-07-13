@@ -72,7 +72,6 @@
         </dependency>
   </dependencies>
    <build>
-        <plugins>
 			 <!-- Préparation de release par le plugin maven release-->
 			 <plugins>
         <plugin>
