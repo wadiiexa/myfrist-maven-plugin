@@ -3,7 +3,7 @@
 
   <groupId>com.anupam</groupId>
   <artifactId>myfirst-maven-plugin</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>maven-plugin</packaging>
 
   <name>myfirst-maven-plugin</name>
@@ -17,7 +17,8 @@
        <connection>scm:git:git@github.com:wadiiexa/myfirst-maven-plugin.git</connection>
        <url>scm:git:git@github.com:wadiiexa/myfirst-maven-plugin.git</url>
        <developerConnection>scm:git:git@github.com:wadiiexa/myfirst-maven-plugin.git</developerConnection>
-     </scm>
+       <tag>myfirst-maven-plugin-1.0</tag>
+  </scm>
 	    <!--<scm>
            <connection>scm:git:https://github.com/wadiiexa/myfirst-maven-plugin.git</connection>
 		  </scm>-->
