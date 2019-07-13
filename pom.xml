@@ -17,6 +17,7 @@
        <connection>scm:git:git@github.com:wadiiexa/myfirst-maven-plugin.git</connection>
        <url>scm:git:git@github.com:wadiiexa/myfirst-maven-plugin.git</url>
        <developerConnection>scm:git:git@github.com:wadiiexa/myfirst-maven-plugin.git</developerConnection>
+	    <tag>myfirst-maven-plugin-1.0</tag>
      </scm>
 	    <!--<scm>
            <connection>scm:git:https://github.com/wadiiexa/myfirst-maven-plugin.git</connection>
